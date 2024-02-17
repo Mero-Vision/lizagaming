@@ -13,7 +13,7 @@
     <meta property="og:description" content="Liza Gaming ">
     <meta property="og:image" content="https://zenix.dexignzone.com/xhtml/social-image.png">
     <meta name="format-detection" content="telephone=no">
-    <title>Liza Gaming </title>
+    <title>Forgot Password </title>
     <!-- Favicon icon -->
     <link rel="icon" type="image/png" sizes="16x16" href="{{url('assets/img/favicon.png')}}">
     <link href="{{ url('assets/css/bootstrap-select.min.css')}}" rel="stylesheet">
@@ -30,7 +30,7 @@
                         <div class="row no-gutters">
                             <div class="col-xl-12">
                                 <div class="auth-form">
-                                    <div class="text-center mb-3">
+									<div class="text-center mb-3">
                                         <a href="{{url('/')}}" class="brand-logo">
                                             <svg class="logo-abbr" width="50" height="50" viewBox="0 0 50 50"
                                                 fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -40,37 +40,19 @@
                                                     d="M17.5158 25.8619L19.8088 25.2475L14.8746 11.1774C14.5189 9.84988 15.8701 9.0998 16.8205 9.75055L33.0924 22.2055C33.7045 22.5589 33.8512 24.0717 32.6444 24.3951L30.3514 25.0095L35.2856 39.0796C35.6973 40.1334 34.4431 41.2455 33.3397 40.5064L17.0678 28.0515C16.2057 27.2477 16.5504 26.1205 17.5158 25.8619ZM18.685 14.2955L22.2224 24.6007L29.4633 22.6605L18.685 14.2955ZM31.4751 35.9615L27.8171 25.6886L20.5762 27.6288L31.4751 35.9615Z"
                                                     fill="white" />
                                             </svg>
-                                            <h2 class="brand-title">Liza Gaming</h2>
+                                          
                                         </a>
                                     </div>
-                                    <h4 class="text-center mb-4">Sign in your account</h4>
+                                    <h4 class="text-center mb-4">Forgot Password</h4>
                                     <form action="index.html">
                                         <div class="form-group">
-                                            <label class="mb-1"><strong>Email</strong></label>
+                                            <label><strong>Email</strong></label>
                                             <input type="email" class="form-control" placeholder="hello@example.com">
                                         </div>
-                                        <div class="form-group">
-                                            <label class="mb-1"><strong>Password</strong></label>
-                                            <input type="password" class="form-control" placeholder="Password">
-                                        </div>
-                                        <div class="form-row d-flex justify-content-between mt-4 mb-2 flex-wrap">
-                                            <div class="form-group">
-                                                <div class="custom-control custom-checkbox ms-1">
-                                                    <input type="checkbox" class="form-check-input"
-                                                        id="basic_checkbox_1">
-                                                    <label class="form-check-label" for="basic_checkbox_1">Remember my
-                                                        preference</label>
-                                                </div>
-                                            </div>
-                                            <div class="form-group">
-                                                <a href="{{url('forgot-password')}}">Forgot Password?</a>
-                                            </div>
-                                        </div>
                                         <div class="text-center">
-                                            <button type="submit" class="btn btn-primary btn-block">Sign Me In</button>
+                                            <button type="submit" class="btn btn-primary btn-block">SUBMIT</button>
                                         </div>
                                     </form>
-                                    
                                 </div>
                             </div>
                         </div>
@@ -81,16 +63,8 @@
     </div>
 
 
-    <!--**********************************
-        Scripts
-    ***********************************-->
-    <!-- Required vendors -->
-    {{-- <script src="{{url('assets/js/global.min.js')}}"></script> --}}
-    {{-- <script src="{{ url('assets/js/bootstrap-select.min.js') }}"></script>
-    <script src="{{ url('assets/js/custom.js') }}"></script>
-    <script src="{{ url('assets/js/deznav-init.js') }}"></script>
-    <script src="{{ url('assets/js/main.js') }}"></script>
-    <script src="{{ url('assets/js/styleSwitcher.js') }}"></script> --}}
+   
+    
+    
 </body>
-
 </html>
