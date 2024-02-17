@@ -16,7 +16,7 @@
     <title>Liza Gaming </title>
     <!-- Favicon icon -->
     <link rel="icon" type="image/png" sizes="16x16" href="{{url('assets/img/favicon.png')}}">
-    <link href="./vendor/bootstrap-select/dist/css/bootstrap-select.min.css" rel="stylesheet">
+    <link href="{{ url('assets/css/bootstrap-select.min.css')}}" rel="stylesheet">
     <link class="main-css" href="{{ url('assets/css/style.css') }}" rel="stylesheet">
 
 </head>
@@ -86,11 +86,11 @@
     ***********************************-->
     <!-- Required vendors -->
     {{-- <script src="{{url('assets/js/global.min.js')}}"></script> --}}
-    <script src="{{ url('assets/js/bootstrap-select.min.js') }}"></script>
+    {{-- <script src="{{ url('assets/js/bootstrap-select.min.js') }}"></script>
     <script src="{{ url('assets/js/custom.js') }}"></script>
     <script src="{{ url('assets/js/deznav-init.js') }}"></script>
     <script src="{{ url('assets/js/main.js') }}"></script>
-    <script src="{{ url('assets/js/styleSwitcher.js') }}"></script>
+    <script src="{{ url('assets/js/styleSwitcher.js') }}"></script> --}}
 </body>
 
 </html>
