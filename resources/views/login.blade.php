@@ -47,11 +47,11 @@
                                     <form action="index.html">
                                         <div class="form-group">
                                             <label class="mb-1"><strong>Email</strong></label>
-                                            <input type="email" class="form-control" value="hello@example.com">
+                                            <input type="email" class="form-control" placeholder="hello@example.com">
                                         </div>
                                         <div class="form-group">
                                             <label class="mb-1"><strong>Password</strong></label>
-                                            <input type="password" class="form-control" value="Password">
+                                            <input type="password" class="form-control" placeholder="Password">
                                         </div>
                                         <div class="form-row d-flex justify-content-between mt-4 mb-2 flex-wrap">
                                             <div class="form-group">
