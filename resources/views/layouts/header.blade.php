@@ -3,4 +3,3 @@
     <link rel="icon" type="image/png" sizes="16x16" href="{{ url('assets/img/favicon.png') }}">
     <link href="{{ url('assets/css/bootstrap-select.min.css') }}" rel="stylesheet">
     <link class="main-css" href="{{ url('assets/css/style.css') }}" rel="stylesheet">
-    <link href="{{url('assets/css/jquery.dataTables.min.css')}}" rel="stylesheet">
