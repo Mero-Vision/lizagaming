@@ -44,14 +44,24 @@
                                         </a>
                                     </div>
                                     <h4 class="text-center mb-4">Sign in your account</h4>
-                                    <form action="index.html">
+                                    <form action="{{url('login')}}" method="POST">
+                                        @csrf
                                         <div class="form-group">
                                             <label class="mb-1"><strong>Email</strong></label>
-                                            <input type="email" class="form-control" placeholder="hello@example.com">
+                                            <input type="email" class="form-control" placeholder="hello@example.com" name="email">
+                                             @error('email')
+                                        <p class="text-danger">{{$message}}</p>
+                                            
+                                        @enderror
                                         </div>
+                                       
                                         <div class="form-group">
                                             <label class="mb-1"><strong>Password</strong></label>
-                                            <input type="password" class="form-control" placeholder="Password">
+                                            <input type="password" class="form-control" placeholder="Password" name="password">
+                                             @error('password')
+                                        <p class="text-danger">{{$message}}</p>
+                                            
+                                        @enderror
                                         </div>
                                         <div class="form-row d-flex justify-content-between mt-4 mb-2 flex-wrap">
                                             <div class="form-group">
