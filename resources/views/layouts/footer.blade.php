@@ -28,5 +28,5 @@
     <script src="{{ url('assets/js/bootstrap-select.min.js') }}"></script>
     <script src="{{ url('assets/js/custom.js') }}"></script>
     <script src="{{ url('assets/js/deznav-init.js') }}"></script>
-    {{-- <script src="{{ url('assets/js/main.js') }}"></script> --}}
+    
    
