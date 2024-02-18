@@ -394,7 +394,7 @@
 			vHeight();
 			handleChatSidebar();
 			handleCkEditor();
-			
+			handleImageSelect();
 			handleThemeMode();
 			domoPanel();
 		},
@@ -403,7 +403,7 @@
 		load:function(){
 			handleTheme();
 			handleSelectPicker();
-			
+			handleImageSelect();
 			handleSupport();
 		},
 		
