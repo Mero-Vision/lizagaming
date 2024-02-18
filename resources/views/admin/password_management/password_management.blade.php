@@ -180,7 +180,7 @@
                                             </td>
                                             <td>
                                                 <div>
-                                                    <h6>{{ $data->name }}</h6>
+                                                    <h6>{{ $data->email }}</h6>
 
                                                 </div>
                                             </td>
