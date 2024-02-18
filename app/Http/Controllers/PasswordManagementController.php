@@ -40,4 +40,29 @@ class PasswordManagementController extends Controller
         }
         
     }
+
+    public function destroy($id){
+        $password=Password::find($id);
+        if(!$password){
+            return back()->with('error','Password ID Not Found!');
+        }
+
+        
+        try{
+            $passwords=DB::transaction(function()use($password){
+                $password->delete();
+                return $password;
+                
+            });
+            if($password){
+                return back()->with('success','Password deleted successfully!');
+            }
+            
+        }
+        catch(\Exception $e){
+            return back()->with('error',$e->getMessage());
+        }
+        
+        
+    }
 }

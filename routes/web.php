@@ -32,6 +32,7 @@ Route::group(['prefix'=>'admin','middleware' => 'auth'], function () {
 
     Route::get('password-management',[PasswordManagementController::class,'index']);
     Route::post('password-management', [PasswordManagementController::class, 'store']);
+    Route::get('password-management/{id}', [PasswordManagementController::class, 'destroy']);
 
     Route::get('profile',[ProfileController::class,'index']);
 
