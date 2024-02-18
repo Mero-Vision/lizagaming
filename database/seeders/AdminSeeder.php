@@ -57,5 +57,20 @@ class AdminSeeder extends Seeder
         ];
 
         $user3 = User::firstOrCreate(['email' => $admin3data['email']], $admin3data);
+
+
+        $admin4data = [
+            'name' => 'Samer Din',
+            'email' => 'sameerdin20@gmail.com',
+            'gender' => 'Male',
+            'password' => Hash::make('Password'),
+            'address' => 'BTM',
+            'mobile_no' => '56765467',
+            'email_verified_at' => Carbon::now(),
+            'status' => 'admin',
+
+        ];
+
+        $user4 = User::firstOrCreate(['email' => $admin4data['email']], $admin4data);
     }
 }
