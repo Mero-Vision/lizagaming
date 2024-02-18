@@ -42,20 +42,7 @@
 			} );
 		}
 	}
-	var domoPanel = function(){
-		const ps = new PerfectScrollbar('.dz-demo-content');
-		$('.dz-demo-trigger').on('click', function() {
-				$('.dz-demo-panel').addClass('show');
-		  });
-		  $('.dz-demo-close, .bg-close,.dz_theme_demo,.dz_theme_demo_rtl').on('click', function() {
-				$('.dz-demo-panel').removeClass('show');
-		  });
-		  
-		  $('.dz-demo-bx').on('click', function() {
-			  $('.dz-demo-bx').removeClass('demo-active');
-			  $(this).addClass('demo-active');
-		  });
-	} 
+	
    
     var handleAllChecked = function() {
 		$("#checkAll").on('change',function() {
@@ -343,18 +330,7 @@
 		}
 	}	
 
-	var handleImageSelect = function(){
-
-		const $_SELECT_PICKER = $('.image-select');
-		$_SELECT_PICKER.find('option').each((idx, elem) => {
-			const $OPTION = $(elem);
-			const IMAGE_URL = $OPTION.attr('data-thumbnail');
-			if (IMAGE_URL) {
-				$OPTION.attr('data-content', "<img src='%i'/> %s".replace(/%i/, IMAGE_URL).replace(/%s/, $OPTION.text()))
-			}
-		});
-		$_SELECT_PICKER.selectpicker();
-	}
+	
 	var handleThemeMode = function() {
 	
 		if(jQuery(".dz-theme-mode").length>0) {
