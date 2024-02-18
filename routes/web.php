@@ -3,6 +3,7 @@
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\ForgotPasswordController;
+use App\Http\Controllers\PasswordManagementController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -24,6 +25,10 @@ Route::post('login', [AuthController::class, 'login']);
 
 Route::get('forgot-password', [ForgotPasswordController::class, 'index']);
 
-Route::group(['middleware' => 'auth'], function () {
-    Route::get('admin/dashboard', [DashboardController::class, 'index']);
+Route::group(['prefix'=>'admin','middleware' => 'auth'], function () {
+    Route::get('dashboard', [DashboardController::class, 'index']);
+
+    Route::get('password-management',[PasswordManagementController::class,'index']);
+
+
 });

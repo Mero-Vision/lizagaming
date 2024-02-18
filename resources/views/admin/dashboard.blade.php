@@ -13,17 +13,12 @@
     <meta property="og:description" content="Zenix - Crypto Admin Dashboard">
     <meta property="og:image" content="https://zenix.dexignzone.com/xhtml/social-image.png">
     <meta name="format-detection" content="telephone=no">
-    <title>Zenix - Crypto Admin Dashboard </title>
+    <title>Liza Gaming</title>
+    @include('layouts.header')
 
 
-    <!-- Page Level CSS -->
-    <link rel="stylesheet" href="{{ url('assets/css/chartist.min.css') }}">
-    <link href="{{ url('assets/css/owl.carousel.css') }}" rel="stylesheet">
-    <!-- End Page Level CSS -->
-
-    <link rel="icon" type="image/png" sizes="16x16" href="{{ url('assets/img/favicon.png') }}">
-    <link href="{{ url('assets/css/bootstrap-select.min.css') }}" rel="stylesheet">
-    <link class="main-css" href="{{ url('assets/css/style.css') }}" rel="stylesheet">
+   
+    
 
 
 

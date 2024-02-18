@@ -42,9 +42,9 @@
 							
                             <li class="nav-item dropdown header-profile">
                                 <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown">
-                                    <img src="images/profile/pic1.jpg" width="20" alt="">
+                                    <img src="{{ Avatar::create(auth()->user()->name)->toBase64() }}" width="20" alt="">
 									<div class="header-info">
-										<span>Johndoe</span>
+										<span>{{auth()->user()->name}}</span>
 										<small>Super Admin</small>
 									</div>
                                 </a>
