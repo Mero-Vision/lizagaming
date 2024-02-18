@@ -153,7 +153,7 @@
                     <div class="card-body">
                         <div class="table-responsive">
                             <table class="table style-1" id="example">
-                                <thead>
+                                <thead class="bg-primary text-light">
                                     <tr>
                                         <th>ID</th>
                                         <th>Name</th>
@@ -166,29 +166,31 @@
                                     @forelse ($passwords as $data)
                                         <tr>
                                             <td>
-                                                <h6>{{$data->id}}.</h6>
+                                                <h6>{{ $data->id }}.</h6>
                                             </td>
                                             <td>
                                                 <div class="media style-1">
-                                                    <img src="{{ Avatar::create($data->name)->toBase64() }}" class="img-fluid me-3"
-                                                        alt="">
+                                                    <img src="{{ Avatar::create($data->name)->toBase64() }}"
+                                                        class="img-fluid me-3" alt="">
                                                     <div class="media-body">
-                                                        <h6>{{$data->name}}</h6>
-                                                        <span>{{$data->url}}</span>
+                                                        <h6>{{ $data->name }}</h6>
+                                                        <span>{{ $data->url }}</span>
                                                     </div>
                                                 </div>
                                             </td>
                                             <td>
                                                 <div>
-                                                    <h6>{{$data->name}}</h6>
-                                                  
+                                                    <h6>{{ $data->name }}</h6>
+
                                                 </div>
                                             </td>
 
-                                            <td> <div>
-                                                    <h6>{{$data->password}}</h6>
-                                                  
-                                                </div></td>
+                                            <td>
+                                                <div>
+                                                    <h6>{{ $data->password }}</h6>
+
+                                                </div>
+                                            </td>
                                             <td>
                                                 <div class="d-flex action-button">
                                                     <a href="javascript:void(0);"
@@ -219,6 +221,12 @@
                                         </tr>
 
                                     @empty
+                                        <tr>
+                                            <td colspan="5">
+                                                <img src="{{ url('assets/img/Empty-rafiki.png') }}"
+                                                    class="img-fluid d-block mx-auto" style="max-width: 300px" />
+                                            </td>
+                                        </tr>
                                     @endforelse
 
 
