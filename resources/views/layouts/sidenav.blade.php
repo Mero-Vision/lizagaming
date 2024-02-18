@@ -40,10 +40,7 @@
                     
                     
                 </ul>
-				<div class="copyright">
-					
-					<p class="fs-12">Made with <span class="heart"></span> Hancie Phago</p>
-				</div>
+				
 			</div>
         </div>
         <!--**********************************

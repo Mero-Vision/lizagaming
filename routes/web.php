@@ -31,8 +31,12 @@ Route::group(['prefix'=>'admin','middleware' => 'auth'], function () {
     Route::get('dashboard', [DashboardController::class, 'index']);
 
     Route::get('password-management',[PasswordManagementController::class,'index']);
+    Route::post('password-management', [PasswordManagementController::class, 'store']);
 
     Route::get('profile',[ProfileController::class,'index']);
+
+
+    
 
 
 });
