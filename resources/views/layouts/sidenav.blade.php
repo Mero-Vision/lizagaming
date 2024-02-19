@@ -27,11 +27,8 @@
                 </a>
                 <ul aria-expanded="false">
                     <li><a href="{{ url('admin/password-management') }}">Password Management</a></li>
-
-
-
-
                     <li><a href="{{ url('admin/game-password-management') }}">Game Password Management</a></li>
+                    <li><a href="{{ url('admin/notes') }}">Notes</a></li>
 
 
                 </ul>

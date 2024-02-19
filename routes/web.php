@@ -4,6 +4,7 @@ use App\Http\Controllers\AuthController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\ForgotPasswordController;
 use App\Http\Controllers\GamePasswordManagementController;
+use App\Http\Controllers\NoteController;
 use App\Http\Controllers\PasswordManagementController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
@@ -39,6 +40,9 @@ Route::group(['prefix'=>'admin','middleware' => 'auth'], function () {
     Route::get('game-password-management', [GamePasswordManagementController::class, 'index']);
     Route::post('game-password-management', [GamePasswordManagementController::class, 'store']);
     Route::get('game-password-management/{id}', [GamePasswordManagementController::class, 'destroy']);
+
+    Route::get('notes',[NoteController::class,'index']);
+    Route::post('notes', [NoteController::class, 'store']);
 
     Route::get('profile',[ProfileController::class,'index']);
 
