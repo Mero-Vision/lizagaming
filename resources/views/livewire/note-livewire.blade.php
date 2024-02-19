@@ -1,4 +1,13 @@
 <div>
+    <div class="mx-5">
+    <div class="input-group">
+        
+        <input class="form-control" id="searchInput" placeholder="Search Notes" type="text" wire:model.live="word"
+           >
+           <span class="input-group-text"><i class="fas fa-search" aria-hidden="true"></i></span>
+    </div>
+</div><br>
+
     <div class="tab-content">
         <div class="tab-pane fade show active" id="navpills-1">
             <div class="row dz-scroll  loadmore-content searchable-items list" id="allContactListContent">
