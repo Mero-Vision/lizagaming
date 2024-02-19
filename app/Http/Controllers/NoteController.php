@@ -39,19 +39,19 @@ class NoteController extends Controller
 
     public function destroy($id)
     {
-        $password = Note::find($id);
-        if (!$password) {
-            return back()->with('error', 'Password ID Not Found!');
+        $note = Note::find($id);
+        if (!$note) {
+            return back()->with('error', 'Note ID Not Found!');
         }
 
 
         try {
-            $passwords = DB::transaction(function () use ($password) {
-                $password->delete();
-                return $password;
+            $note = DB::transaction(function () use ($note) {
+                $note->delete();
+                return $note;
             });
-            if ($password) {
-                return back()->with('success', 'Password deleted successfully!');
+            if ($note) {
+                return back()->with('success', 'Note deleted successfully!');
             }
         } catch (\Exception $e) {
             return back()->with('error', $e->getMessage());

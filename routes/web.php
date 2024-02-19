@@ -43,6 +43,7 @@ Route::group(['prefix'=>'admin','middleware' => 'auth'], function () {
 
     Route::get('notes',[NoteController::class,'index']);
     Route::post('notes', [NoteController::class, 'store']);
+    Route::get('notes/{id}', [NoteController::class, 'destroy']);
 
     Route::get('profile',[ProfileController::class,'index']);
 

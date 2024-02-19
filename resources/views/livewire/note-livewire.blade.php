@@ -8,13 +8,14 @@
     </div>
 </div><br>
 
-    <div class="tab-content">
+    <div class="container">
         <div class="tab-pane fade show active" id="navpills-1">
             <div class="row dz-scroll  loadmore-content searchable-items list" id="allContactListContent">
                 @forelse ($notes as $data)
                     <div class="col-xl-3 col-xxl-4 col-lg-4 col-md-6 col-sm-6 items">
-                        <div class="card contact-bx item-content shadow">
-                            <div class="card-header border-1">
+                        <div >
+                            <div class="card contact-bx item-content shadow border">
+                            <div class="card-header border-0">
                                 <div class="action-dropdown">
                                     <div class="dropdown">
                                         <a href="javascript:void(0);" data-bs-toggle="dropdown" aria-expanded="false">
@@ -38,8 +39,8 @@
                                             </svg>
                                         </a>
                                         <div class="dropdown-menu dropdown-menu-end">
-                                            <a class="dropdown-item edit" href="javascript:void(0);">Edit</a>
-                                            <a class="dropdown-item delete" href="javascript:void(0);">Delete</a>
+                                            {{-- <a class="dropdown-item edit" href="javascript:void(0);">Edit</a> --}}
+                                            <a class="dropdown-item delete" href="{{url('admin/notes')}}/{{$data->id}}">Delete</a>
                                         </div>
                                     </div>
                                 </div>
@@ -56,6 +57,8 @@
                                 </div>
                             </div>
                         </div>
+                        </div>
+                        
                     </div>
                 @empty
 
