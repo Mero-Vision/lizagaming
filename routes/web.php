@@ -48,6 +48,9 @@ Route::group(['prefix'=>'admin','middleware' => 'auth'], function () {
     Route::get('profile',[ProfileController::class,'index']);
 
 
+    Route::get('/chat/{userId}',[DashboardController::class,'show']);
+
+
     
 
 

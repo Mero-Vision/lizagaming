@@ -15,10 +15,11 @@
     <meta name="format-detection" content="telephone=no">
     <title>Liza Gaming</title>
     @include('layouts.header')
+    @livewireStyles()
 
 
-   
-    
+
+
 
 
 
@@ -50,7 +51,7 @@
     ***********************************-->
     <div id="main-wrapper">
 
-       @include('layouts.navheader')
+        @include('layouts.navheader')
 
         @include('layouts.chat')
 
@@ -64,10 +65,10 @@
         <div class="content-body">
             <div class="container-fluid">
                 <h1>Dashboard</h1>
-                
-                
-                
-                
+
+
+
+
             </div>
         </div>
         <!--**********************************
@@ -89,7 +90,14 @@
     ***********************************-->
 
 
+    @livewireScripts()
     @include('layouts.footer')
+    
+<script>
+    function setActiveUser(userId) {
+        Livewire.emit('chat', userId);
+    }
+</script>
 
 
 
