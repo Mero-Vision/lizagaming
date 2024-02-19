@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\GamePassword;
+use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 
@@ -11,9 +12,10 @@ class GamePasswordManagementController extends Controller
     public function index(){
 
         $gamePasswords = GamePassword::latest()->get();
+        $users = User::get();
 
         
-        return view('admin.game_password_management.game_password_management',compact('gamePasswords'));
+        return view('admin.game_password_management.game_password_management',compact('gamePasswords','users'));
     }
 
 

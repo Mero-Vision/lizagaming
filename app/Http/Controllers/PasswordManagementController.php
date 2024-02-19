@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Password;
+use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 
@@ -10,7 +11,8 @@ class PasswordManagementController extends Controller
 {
     public function index(){
         $passwords=Password::latest()->get();
-        return view('admin.password_management.password_management',compact('passwords'));
+        $users = User::get();
+        return view('admin.password_management.password_management',compact('passwords','users'));
     }
 
     public function store(Request $request){

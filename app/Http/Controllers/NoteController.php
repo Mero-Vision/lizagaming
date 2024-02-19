@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Note;
+use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 
@@ -11,7 +12,8 @@ class NoteController extends Controller
     public function index(){
 
       $notes=Note::latest()->get();
-        return view('admin.note.note',compact('notes'));
+        $users = User::get();
+        return view('admin.note.note',compact('notes','users'));
     }
 
     public function store(Request $request)
