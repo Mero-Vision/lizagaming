@@ -35,6 +35,8 @@ Route::group(['prefix'=>'admin','middleware' => 'auth'], function () {
 
     Route::get('customers',[CustomerController::class,'index']);
     Route::post('customers', [CustomerController::class, 'store']);
+    Route::get('customers-view', [CustomerController::class, 'viewCustomerIndex']);
+    Route::get('customers-view-data', [CustomerController::class, 'customerData']);
 
     Route::get('password-management',[PasswordManagementController::class,'index']);
     Route::post('password-management', [PasswordManagementController::class, 'store']);

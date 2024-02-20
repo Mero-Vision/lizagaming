@@ -15,6 +15,18 @@ class CustomerController extends Controller
         return view('admin.customers.customer',compact('users'));
     }
 
+    public function viewCustomerIndex(){
+        $users = User::get();
+        return view('admin.customers.view_customers',compact('users'));
+        
+    }
+
+    public function customerData(){
+        $customers=Customer::get();
+
+        return response()->json(['data'=>$customers]);
+    }
+
 
     public function store(Request $request)
     {

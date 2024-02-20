@@ -23953,7 +23953,7 @@ table.dataTable tbody tr, table.dataTable tbody td {
   background: transparent !important; }
 
 table.dataTable thead th {
-  color: #000;
+  color: white;
   white-space: nowrap;
   font-size: 18px;
   text-transform: capitalize;
@@ -24012,68 +24012,7 @@ table.dataTable.style-1 thead th {
     top: 50%;
     transform: translateY(-50%); }
 
-.dataTables_wrapper .dataTables_paginate {
-  display: flex; }
-  .dataTables_wrapper .dataTables_paginate .paginate_button {
-    height: 48px;
-    width: 48px;
-    padding: 0;
-    margin: 0 5px;
-    border: 0 !important;
-    font-weight: 500;
-    font-size: 1.5rem;
-    color: #000;
-    text-align: center;
-    line-height: 48px;
-    border-radius: 4px;
-    background: #efefef !important; }
-    .dataTables_wrapper .dataTables_paginate .paginate_button:hover, .dataTables_wrapper .dataTables_paginate .paginate_button:focus, .dataTables_wrapper .dataTables_paginate .paginate_button.current {
-      background: var(--primary) !important;
-      color: #fff !important; }
-    .dataTables_wrapper .dataTables_paginate .paginate_button.disabled {
-      background: #efefef !important; }
-      .dataTables_wrapper .dataTables_paginate .paginate_button.disabled:hover, .dataTables_wrapper .dataTables_paginate .paginate_button.disabled:focus, .dataTables_wrapper .dataTables_paginate .paginate_button.disabled.current {
-        background: #efefef !important; }
-  .dataTables_wrapper .dataTables_paginate span {
-    display: inline-flex;
-    padding: 4px 5px;
-    background: #efefef;
-    border-radius: 4px; }
-    .dataTables_wrapper .dataTables_paginate span .paginate_button {
-      height: 40px;
-      width: 40px;
-      padding: 0;
-      margin: 0 2px;
-      border: 0 !important;
-      font-weight: 500;
-      font-size: 1rem;
-      color: #000;
-      text-align: center;
-      line-height: 40px;
-      border-radius: 4px;
-      background: transparent !important; }
-      .dataTables_wrapper .dataTables_paginate span .paginate_button.current, .dataTables_wrapper .dataTables_paginate span .paginate_button:hover, .dataTables_wrapper .dataTables_paginate span .paginate_button:focus, .dataTables_wrapper .dataTables_paginate span .paginate_button:active {
-        background: var(--primary) !important;
-        color: #fff !important; }
 
-.dataTables_wrapper .dataTables_paginate .paginate_button.current, .dataTables_wrapper .dataTables_paginate .paginate_button.current:hover {
-  color: #fff !important; }
-
-.dataTables_wrapper input[type="search"], .dataTables_wrapper input[type="text"], .dataTables_wrapper select {
-  border: 1px solid #e2e2e2;
-  padding: .3rem 0.5rem;
-  color: #715d5d;
-  border-radius: 5px; }
-  [data-theme-version="dark"] .dataTables_wrapper input[type="search"], [data-theme-version="dark"] .dataTables_wrapper input[type="text"], [data-theme-version="dark"] .dataTables_wrapper select {
-    background: #2C254A;
-    border-color: #473F72;
-    color: #fff; }
-
-.dataTables_wrapper .dataTables_length {
-  margin-bottom: 15px; }
-  .dataTables_wrapper .dataTables_length .bootstrap-select {
-    width: 80px !important;
-    margin: 0 5px; }
 
 table.dataTable.no-footer {
   border-bottom: 0; }
