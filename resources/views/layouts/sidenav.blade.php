@@ -20,6 +20,20 @@
                 </a>
             </li>
 
+           
+            <li><a class="has-arrow ai-icon" href="javascript:void()">
+                    <i class="flaticon-028-user-1"></i>
+                    <span class="nav-text">Customers</span>
+                </a>
+                <ul aria-expanded="false">
+                    <li><a href="{{ url('admin/customers') }}">Create Customer</a></li>
+                    <li><a href="{{ url('admin/game-password-management') }}">View Customers</a></li>
+                   
+
+
+                </ul>
+            </li>
+
             <li class="nav-label">Apps</li>
             <li><a class="has-arrow ai-icon" href="javascript:void()">
                     <i class="flaticon-077-menu-1"></i>

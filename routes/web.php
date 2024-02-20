@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\AuthController;
+use App\Http\Controllers\CustomerController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\ForgotPasswordController;
 use App\Http\Controllers\GamePasswordManagementController;
@@ -31,6 +32,9 @@ Route::get('forgot-password', [ForgotPasswordController::class, 'index']);
 Route::group(['prefix'=>'admin','middleware' => 'auth'], function () {
     Route::get('logout',[AuthController::class,'logout']);
     Route::get('dashboard', [DashboardController::class, 'index']);
+
+    Route::get('customers',[CustomerController::class,'index']);
+    Route::post('customers', [CustomerController::class, 'store']);
 
     Route::get('password-management',[PasswordManagementController::class,'index']);
     Route::post('password-management', [PasswordManagementController::class, 'store']);
